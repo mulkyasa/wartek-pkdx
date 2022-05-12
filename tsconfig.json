@@ -19,7 +19,9 @@
     "paths": {
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
-      "@containers/*": ["./containers/*"]
+      "@containers/*": ["./containers/*"],
+      "@utils/*": ["./utils/*"],
+      "@models/*": ["./models/*"],
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
