@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-export const Box = styled.div`
+interface ICardStyle {
+  bgColor: string;
+}
+
+export const Box = styled.div<ICardStyle>`
   width: 100%;
-  background-color: #b5eaaf;
+  height: 100%;
+  background-color: ${(props) => props.bgColor}80;
   border-radius: 1.25rem;
   padding: 12px;
 
