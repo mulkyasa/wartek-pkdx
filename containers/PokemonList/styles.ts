@@ -17,4 +17,5 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   width: calc(50% - 6px);
+  min-height: 246px;
 `;
