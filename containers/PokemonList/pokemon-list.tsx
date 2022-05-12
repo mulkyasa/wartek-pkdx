@@ -45,7 +45,7 @@ export default function PokemonList() {
     if (
       !!pokemon &&
       !loading &&
-      !!pokemon.species.length &&
+      !!pokemonSpeciesLength &&
       isBottom &&
       pokemonSpeciesLength < pokemonSpeciesCount
     ) {

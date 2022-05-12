@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Head = styled.h3`
-  margin: 0 0 20px;
+  margin: 12px 0 20px;
 `;
 
 export const List = styled.ul`
