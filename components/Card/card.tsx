@@ -1,6 +1,6 @@
 import Badge from '@components/Badge';
 import { ISpecies } from '@models/ipokemon';
-import { pokemonTypeColor } from '@utils/constant';
+import { generateId, getPokemonTypeColor } from '@utils/formatter';
 import Images from 'next/image';
 import * as Styled from './styles';
 
@@ -10,22 +10,6 @@ interface ICard {
 
 export default function Card(props: ICard) {
   const { data } = props;
-
-  const generateId = (id: number) => {
-    const newId = String(id).padStart(3, '0');
-    return `#${newId}`;
-  };
-
-  const getPokemonTypeColor = (pokemonTypes: string[]) => {
-    if (pokemonTypes) {
-      const typeColors = pokemonTypeColor.filter(({ type }) =>
-        pokemonTypes.includes(type)
-      );
-
-      return typeColors;
-    }
-    return [];
-  };
 
   const genereatedId = generateId(data.id);
 

@@ -59,8 +59,7 @@ export default function PokemonList() {
 
   return (
     <>
-      <title key="page-title">Wartek</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <title key="page-title">Pokédex</title>
 
       <Layout>
         <Styled.Head>
