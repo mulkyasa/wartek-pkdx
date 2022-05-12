@@ -1,9 +1,9 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const useInfiniteScroll = (elementId: string) => {
   const [isBottom, setIsBottom] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     function handleScroll() {
       const currentHeight =
         window.innerHeight + document.documentElement.scrollTop;
